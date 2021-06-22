@@ -1,0 +1,16 @@
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.kotak {
+  width: 700px;
+  height: 400px;
+  background-color: bisque;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.kotak h1 {
+  padding-top: 20px;
+}

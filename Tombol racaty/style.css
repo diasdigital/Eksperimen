@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(127, 157, 255);
+}
+
+/* beri left, right, top, atau bottom untuk menggeser posisi tombol */
+.wadahTombol {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+}
+
+.tombol,
+.tombolLuar,
+.tombolDalam,
+.tombolGlow,
+.icon {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon {
+  width: 150px;
+  height: 150px;
+}
+
+.tombolLuar {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-color: rgba(241, 241, 241, 0.05);
+}
+
+.tombol {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: rgb(245, 245, 245);
+}
+
+.tombolDalam {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.tombolGlow {
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.7;
+  animation-name: glow;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes glow {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    width: 400px;
+    height: 400px;
+    opacity: 0;
+  }
+}
